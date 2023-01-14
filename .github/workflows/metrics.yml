@@ -23,6 +23,8 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          retries: 5
+          retries_delay: 180 # 3 min
 
           # Options
           user: ptforness
