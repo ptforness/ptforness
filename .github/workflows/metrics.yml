@@ -25,6 +25,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           retries: 5
           retries_delay: 180 # 3 min
+          config_output: png
 
           # Options
           user: ptforness
